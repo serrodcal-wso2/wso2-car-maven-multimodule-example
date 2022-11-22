@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/internal/health" name="Internal.Health" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/live">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{"hello": "internal"}</format>
+                <args></args>
+            </payloadFactory>
+            <!-- <class name="samples.mediators.SimpleClassMediator"></class> -->
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

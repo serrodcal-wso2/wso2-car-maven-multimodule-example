@@ -2,4 +2,10 @@
     <artifact name="Health" groupId="com.example.api" version="1.0.0-SNAPSHOT" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/Health.xml</file>
     </artifact>
+    <artifact name="External.Health" groupId="com.example.api" version="1.0.0-SNAPSHOT" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/External.Health.xml</file>
+    </artifact>
+    <artifact name="Internal.Health" groupId="com.example.api" version="1.0.0-SNAPSHOT" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Internal.Health.xml</file>
+    </artifact>
 </artifacts>

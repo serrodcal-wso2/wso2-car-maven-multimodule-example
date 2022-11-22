@@ -1,0 +1,16 @@
+version: '3.9'
+
+networks:
+  local:
+
+services:
+  micro-integrator:
+    container_name: "micro-integrator"
+    image: wso2/wso2mi:4.1.0
+    ports:
+      - "8290:8290"
+    volumes:
+      - ./HealthCheckingCompositeExporter/target/HealthCheckingCompositeExporter_1.0.0-SNAPSHOT.car:/home/wso2carbon/wso2mi-4.1.0/repository/deployment/server/carbonapps/HealthCheckingCompositeExporter_1.0.0-SNAPSHOT.car
+      - ./deployment.toml:/home/wso2carbon/wso2mi-4.1.0/conf/deployment.toml
+    networks:
+      - local
