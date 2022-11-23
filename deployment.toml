@@ -1,9 +1,7 @@
 [server]
 hostname = "micro-integrator"
 # offset  = 10
-
-[[server.roles]]
-name = "Gateway"
+roles = ["EnterpriseServiceBus","Gateway"]
 
 [user_store]
 type = "read_only_ldap"
